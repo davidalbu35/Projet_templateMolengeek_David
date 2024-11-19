@@ -13,7 +13,7 @@ nav
     
     .molengeek
         h1
-            font-size: 2.5em  // la taille du font du logo
+            font-size: 2.2em  // la taille du font du logo
             span
                 color: #106EEA  // la couleur du site (code couleur)
     ul
@@ -42,26 +42,39 @@ nav
 
   //je vise la section header grace a "&" qui permet de viser directement lelement parent
   &::before //le before me permet de mettre un element donc ici un overlay avant meme le contenu donc le header
-    content: ''
-    position: absolute
+    content: '' //le content est vide mais il es neccesaire pour faire un pseudo element il ne contient rien car ici je vais juste faire un overlay avec du fond
+    position: absolute //Positionne le pseudo-élément de manière absolue par rapport à l'élément parent
     top: 0
     left: 0
-    right: 0
+    right: 0  // Ces propriétés permet de placer le pseudo-élément ::before au coins de la div parent donc le .header, c'est pour couvrir tout  l'élément parent.
     bottom: 0
-    background-color: rgba(255, 255, 255, 0.63)  // Calque blanc avec 40% d'opacité
+    background-color: rgba(255, 255, 255, 0.63)  // Calque blanc 
     z-index: 1  // Placer l'overlay sous le contenu de .header
 
   // Style pour le contenu dans .header
   .content
-    position: relative
-    z-index: 2  // Le contenu doit être au-dessus du calque
-    color: black
-    padding: 20px
-    text-align: center
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    height: 100%  // Remplir toute la hauteur de .header
+    position: relative // définit un positionnement relatif pour le contenu .content ce qui permet element de se positionner relativement à cet élément.
+    z-index: 2  // pour que le titre et boutton soit au dessus du calque
+    display: flex // jai mis en flex car plus facile pour le positionnement apres
+    flex-direction: column // direction en column pour garder la meme structure qu'avant le flex
+    height: 100% //prendre toute la largeur de la div parent 
+    button
+        width: 154px //largeur du boutton
+        height: 38px // hauteur du boutton
+        border: none //pas de border
+        background-color: #106EEA //couleur du background du boutton
+        color: white //couleur pour le texte du boutton
+        border-radius: 0.3em // arrondir les coté du boutton
+
+
+
+
+
+
+
+
+
+    
+    
 
 
