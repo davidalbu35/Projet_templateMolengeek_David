@@ -33,3 +33,35 @@ nav
 
 // header
 
+
+// Style de la section header
+.header
+  position: relative //  Permet de positionner des éléments enfants relativement à cet élément.
+  background-image: url(../img/hero-bg.jpg)
+  height: 41em
+
+  //je vise la section header grace a "&" qui permet de viser directement lelement parent
+  &::before //le before me permet de mettre un element donc ici un overlay avant meme le contenu donc le header
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(255, 255, 255, 0.63)  // Calque blanc avec 40% d'opacité
+    z-index: 1  // Placer l'overlay sous le contenu de .header
+
+  // Style pour le contenu dans .header
+  .content
+    position: relative
+    z-index: 2  // Le contenu doit être au-dessus du calque
+    color: black
+    padding: 20px
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%  // Remplir toute la hauteur de .header
+
+

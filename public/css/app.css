@@ -29,6 +29,34 @@ nav ul li a {
   color: black;
 }
 
+.header {
+  position: relative;
+  background-image: url(../img/hero-bg.jpg);
+  height: 41em;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.63);
+  z-index: 1;
+}
+.header .content {
+  position: relative;
+  z-index: 2;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
