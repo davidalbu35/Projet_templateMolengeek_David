@@ -1,0 +1,52 @@
+.carousel-image
+  height: 28em //pour ajuster la taille de l'image
+  
+
+.carousel-item
+  position: relative // pour servir de référence au div enfant avec la position absolute
+
+  &::before // pour  définir un pseudo element avant chaque .caroussel-item; le & permet de viser l'element parents donc .caroussel-items
+    content: '' // je l'ai crée car il es obligatoire meme si il est vide
+    position: absolute // Place ce pseudo-élément par rapport au parent qui a une position relative
+    top: 0 // pour placer le lélément au coin  gauche du parent.
+    left: 0 
+    width: 100% // pour couvrir toute la hauteur et la largeur du parent
+    height: 100%
+    background: rgba(0, 0, 0, 0.692) // Opacité de l'ombre
+    z-index: 1 //Place cet élément au-dessus de l'image, mais en dessous du texte
+
+.carousel-caption // Cible la légendes du carrousel
+  z-index: 2 //Place les légendes au-dessus du pseudo element
+  
+
+//ma section avec les 6 different services j'en ai 2 differente car j'ai voulu dabord en mettre q'une et faire un flex-wrap mais finalement je les ai séparer
+.check
+    display: flex //pour mettre mes 3 premiere div en ligne et les 3 derniere également
+    margin-top: 2em
+    justify-content: center // pour centrer mes div
+    text-align: center // pour centrer le contenu
+    gap: 2.3em // pour espacer legerement les div entre elles
+    
+    
+    
+    
+    
+    div
+        
+        border: 1px solid #E6F0FD  // le border des div
+        height: 22.5em // la hauteur
+        width: 22.5em  // la largeur
+        align-content: center
+        i
+            font-size: 1.5em
+            background-color: #F1F6FE
+            padding: 0.7em //j'ai mis un padding dans mon icon pour espacé un peu le background que j'ai mis 
+            border-radius: 0.2em
+            color: #3B8DF3
+        p
+            font-size: 0.8em
+
+
+
+
+

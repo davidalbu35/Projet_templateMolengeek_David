@@ -1,0 +1,188 @@
+.services
+    text-align: center // pour alligner le boutton et le texte au milleu de la div
+    margin-top: 5em // pour donner de la margin entre la section et la section du haut
+    p
+        font-size: 0.8em  //cest seulement la taille de l'ecriture du paragraphe
+        width: 14em  // c'est une largeur que j'ai donner ua badge
+        border-radius: 1em // arrondir le badge 
+
+    h2
+        
+        span
+            color:#106EEA // la couleur de la 2eme partie du titre 
+
+
+
+.div
+    display: flex // display flex pour mettre les element en ligne
+    justify-content: center //pour centrer 
+    margin-top: 2em
+    gap: 2em //espacer les div
+    height: 20em
+    
+    
+    
+    div
+        width: 15em  //largeur
+        height: 15em // hauteur 
+        box-shadow: 1px 5px 20px 5px rgba(0, 0, 0, 0.13)  // pour donner un effet d'ombre sur les div service 
+        align-content: center
+        padding: 2em
+        border-radius: 0.5em
+        
+        
+        i
+            font-size: 2em // la taille des logo i
+            color:#106EEA 
+        p
+            font-weight: bold
+            margin-top: 0.5em
+
+
+@media (max-width:576px)
+   
+
+    .services  //mes div services
+        p
+            font-size: 2em
+        h2
+            font-size: 5em
+    
+    .div
+         
+        height: 250em   //j'ai ajuster la hauteur de ma section service car dans le résponsive je voulais augmenter la taille de mes div pour les mettre en colonne 
+        flex-direction: column //pour mettre mes div en colonne
+        align-items: center //pour centrer mes div au millieu
+        div
+            width: 60em //largeur de mes div services
+            height: 60em // hauteur de mes div services
+            i
+                font-size: 10em //size de mes icon
+            p
+                font-size: 5em  //size de mon paragraphe
+            span
+                font-size: 3em //size de mon texte span
+
+   
+
+    .badge.bg-custom-oui.text-primary.p-2 
+        font-size: 4em // pour aggrandir la taille du texte
+
+
+    .container-fluid.text-center.mt-4
+        h2
+            font-size: 6em
+        p
+            font-size: 2.5em
+    
+    .check
+        div
+            h3
+                font-size: 2.4em
+           
+            .p
+                font-size: 1.3em
+            
+  
+    .team.bg-custom-yes.mt-5
+        .card-body
+            h5
+                font-size: 1.5em
+            p
+                font-size: 1.5em
+        
+    .col-md-6 
+        i
+            font-size: 3em
+        h5
+            font-size: 3em
+        p
+            font-size: 3em           
+
+
+    .col-md-3
+        i
+            font-size: 3em     
+        h5
+            font-size: 3em
+        p
+            font-size: 3em  
+
+
+
+    .row
+        margin-bottom: 8em
+        .col-md-6
+            form
+                .d-grid
+                    button
+                        font-size: 2.5em
+                .mb-3
+                    input
+                        font-size: 2em
+                   
+                        
+                    input
+                        font-size: 2.5em
+                .col
+                    input
+                        font-size: 2.5em
+                
+    footer.bg-custom-oui.d-flex.justify-content-around.align-items-center
+        font-size: 2em
+        
+               
+
+
+
+
+
+
+// résponsive pour tablett 
+
+@media ( min-width: 576px ) and (max-width:768px)
+
+    body
+        width: 100%
+
+
+    .header
+        width: 110%
+        .content
+    #carouselExampleCaptions.carousel.slide 
+        width: 52.8em
+            
+    .services
+        margin-left: 6em   
+            
+    .div
+        margin-left: 5em
+        div
+            width: 13em
+            height: 18em
+            p
+                font-size: 0.8em
+            span
+                font-size: 0.7em
+            
+        
+
+    .container-fluid.text-center.mt-4 
+        margin-left: 2em
+
+    .container
+        .row
+            
+            margin-left: 3em
+            .btn.btn-primary
+                position: absolute
+                right: 12em
+        
+            
+
+    .check  
+        margin-left: 4em
+
+    footer
+        width: 52.7em
+        
